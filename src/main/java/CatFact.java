@@ -5,14 +5,14 @@ public class CatFact {
     private String text;
     private String type;
     private String user;
-    private int upvotes;
+    private Integer upvotes;
 
     public CatFact(
             @JsonProperty("id") String id,
             @JsonProperty("text") String text,
             @JsonProperty("type") String type,
             @JsonProperty("user") String user,
-            @JsonProperty("upvotes") int upvotes) {
+            @JsonProperty("upvotes") Integer upvotes) {
         this.id = id;
         this.text = text;
         this.type = type;
@@ -36,7 +36,7 @@ public class CatFact {
         return user;
     }
 
-    public int getUpvotes() {
+    public Integer getUpvotes() {
         return upvotes;
     }
 
